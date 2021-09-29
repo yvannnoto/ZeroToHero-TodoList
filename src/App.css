@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.completed {
+  color: green;
+}
