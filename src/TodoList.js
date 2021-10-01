@@ -40,9 +40,9 @@ function TodoList() {
       {todos.map((todo, index) => (
         <TodoItem updateTodo={(todoItem) => handleUpdateTodo(todoItem, index)} onDelete={(e) => handleOnDelete(todo)} key={`${todo.date}-${todo.text}`} todo={todo}></TodoItem>
       ))}
-      <form>
-        <input type="text" value={input} onChange={e => setInput(e.target.value)} />
-        <button type="submit" onClick={createItem}>Create</button>
+      <form className="bg-white mt-12 rounded-md p-2 flex shadow-xl">
+        <input type="text" value={input} onChange={e => setInput(e.target.value)} className="appearance-none bg-transparent w-full outline-none pl-4" placeholder="Your new task" />
+        <button type="submit" onClick={createItem} className="text-white bg-blue-400 rounded-md px-4 py-2">Create</button>
       </form>
     </div>
   )
